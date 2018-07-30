@@ -13,6 +13,6 @@ export class HealthService {
   constructor(private http: HttpClient) { }
 
   checkHealth() {
-    return this.http.get('/server/actuator/health');
+    return this.http.get('https://uniqtor-backbone.herokuapp.com/actuator/health');
   }
 }

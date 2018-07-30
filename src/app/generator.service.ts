@@ -9,14 +9,14 @@ export class GeneratorService {
   constructor(private http: HttpClient) { }
 
   getSingleUuid() {
-    return this.http.get('/server/v1/generator/uuid');
+    return this.http.get('https://uniqtor-backbone.herokuapp.com/v1/generator/uuid');
   }
 
   getNUuids(n: number) {
-    return this.http.get('/server/v1/generator/uuid/'+ n);
+    return this.http.get('https://uniqtor-backbone.herokuapp.com/v1/generator/uuid/'+ n);
   }
 
   getNMongoDbIds(n: number) {
-    return this.http.get('/server/v1/generator/mongodbid/'+ n);
+    return this.http.get('https://uniqtor-backbone.herokuapp.com/v1/generator/mongodbid/'+ n);
   }
 }

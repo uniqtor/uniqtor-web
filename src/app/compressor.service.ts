@@ -12,11 +12,11 @@ export class CompressorService {
   constructor(private http: HttpClient) { }
 
   getUrlDetails(urlId: string) {
-    return this.http.get('/server/v1/tinyurls/' + urlId);
+    return this.http.get('https://uniqtor-backbone.herokuapp.com/v1/tinyurls/' + urlId);
   }
 
   generateTinyUrl(request) {
     let body = JSON.stringify(request);
-    return this.http.post('/server/v1/tinyurls', body, httpOptions)
+    return this.http.post('https://uniqtor-backbone.herokuapp.com/v1/tinyurls', body, httpOptions)
   }
 }
