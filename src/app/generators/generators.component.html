@@ -1,0 +1,31 @@
+<app-quick-cards></app-quick-cards>
+<div class="container">
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">UUIDs</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">MongoDB Id</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="contact-tab" data-toggle="tab" href="#randomString" role="tab" aria-controls="contact" aria-selected="false">Rangom String</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="contact-tab" data-toggle="tab" href="#randomNumber" role="tab" aria-controls="contact" aria-selected="false">Rangom Number</a>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+      <div class="jumbotron">
+        <app-gen-uuid-form></app-gen-uuid-form>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+      <div class="jumbotron">
+        <app-gen-mongodb-form></app-gen-mongodb-form>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="randomString" role="tabpanel" aria-labelledby="contact-tab">...</div>
+    <div class="tab-pane fade" id="randomNumber" role="tabpanel" aria-labelledby="contact-tab">...</div>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+{
+    "/server": {
+      "target": "https://uniqtor-backbone.herokuapp.com",
+      "secure": false,
+      "changeOrigin": true,
+      "pathRewrite": {"^/server" : ""}
+    }
+  }
+  

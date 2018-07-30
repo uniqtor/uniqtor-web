@@ -1,0 +1,35 @@
+<div class="container-responsive" style="width: 100%; margin-left: 15px">
+    <div class="row row-header">
+      <div class="card text-white bg-danger mb-3" style="width: 25%">
+        <div class="card-header">Hex Converter</div>
+        <div class="card-body">
+          <h4 class="card-title">Primary card title</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+      <div class="card border-primary bg-info text-white mb-3" style="width: 50%">
+        <div class="card-header">UUID</div>
+        <div class="card-body">
+          <h3 class="card-text" style="font-family: 'Courier New', Courier, monospace"><span class="badge badge-danger">v4</span><strong> {{uuid4}}</strong></h3>
+          <h3 class="card-text" style="font-family: 'Courier New', Courier, monospace"><span class="badge badge-danger">v3</span><strong> {{uuid3}}</strong></h3>
+        </div>
+        <div class="row" style="align-self: center">
+          <div>
+            <button type="button" class="btn btn-warning" (click)="getNgUuid()">
+                <i class="fas fa-sync-alt"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="card border-primary bg-warning text-white mb-3" style="width: 25%">
+        <div class="card-header">Date Time</div>
+        <div class="card-body">
+          <h5 class="card-title">{{nowDateTime}}</h5>
+          <h6>Long Millis : {{now}}</h6>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-primary">Learn More</button>
+        </div>
+      </div>
+    </div>
+  </div>

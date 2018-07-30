@@ -1,0 +1,33 @@
+<h1 class="display-4">Generate Mongodb ObjectIds</h1>
+<hr class="my-4">
+<div class="container">
+  <form [formGroup]="generateMongoDbIdsForm" (ngSubmit)="getMongoDbIds()" novalidate>
+    <div class="form-group">
+      <label>How many ?</label>
+      <input type="text" class="form-control" style="width: 10%" formControlName="n">
+    </div>
+    <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#generateMongoDbModal">Submit</button>
+      <div class="modal fade" id="generateMongoDbModal" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                  <div class="modal-header bg-primary">
+                      <h5 class="modal-title">Success</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">
+                      <ul class="list-group">
+                        <li class="list-group-item" *ngFor="let id of mongodbIds"> 
+                            {{id}}
+                        </li>
+                      </ul>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </form>
+</div>
